@@ -15,6 +15,7 @@
  * adouble with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 #ifndef BUILT_IN_H
 #define BUILT_IN_H
 
@@ -292,23 +293,18 @@ smplx_val* builtin_load(smplx_scope* e, smplx_val* a) {
     LASSERT_TYPE("load", a, 0, LVAL_STR);
 
     /* Parse File given by string name */
+
     mpc_result_t r;
     if (mpc_parse_contents(a->cell[0]->str, Lispy, &r)) {
 
-        /* Read contents */
         smplx_val* expr = smplx_val_read(r.output);
 
-        /* Evaluate Expression */
         smplx_val* x = smplx_val_eval(e, expr);
         smplx_val_println(x);
         smplx_val_del(x);
 
-        /* Delete expressions and arguments */
-        //  smplx_val_del(expr);
-        //  smplx_val_del(a);
         mpc_ast_delete(r.output);
 
-        /* Return empty list */
         return smplx_val_sexpr();
 
     } else {
@@ -329,45 +325,53 @@ smplx_val* builtin_load(smplx_scope* e, smplx_val* a) {
 
 
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 smplx_val* builtin_scan(smplx_scope* e, smplx_val* a) {
 
+    char input[1000];
+    FILE *fptr;
 
-//    char input[256];
-//    char* escaped = malloc(strlen(a->str) + 1);
-//
-//
-//    strcpy(escaped, a->str);
-// 
-//
-//    fgets(input, 256, stdin);
-//
-//    input = "define [" + escaped + "] " + input;
-//
-//    printf("%s", input);
-//    
-//    //    
-//    //    mpc_result_t r;
-//    //    if (mpc_parse("<stdin>", input, Lispy, &r)) {
-//    //
-//    //        smplx_val* expr = smplx_val_read(r.output);
-//    //
-//    //        smplx_val* x = smplx_val_eval(e, expr);
-//    //        //smplx_val_println(x);
-//    //        smplx_val_del(x);
-//    //
-//    //        mpc_ast_delete(r.output);
-//    //
-//    //    } else {
-//    //        mpc_err_print(r.error);
-//    //        mpc_err_delete(r.error);
-//    //    }
-//
-//
-//    smplx_val_del(a);
+    fptr = fopen("define.sx", "w");
 
-    return smplx_val_sexpr();
+    if (fptr == NULL) {
+        printf("Error!");
+    }
+
+
+    fgets(input, 1000, stdin);
+    fprintf(fptr, "(define [%s] %s)", a->cell[0]->str, input);
+    fclose(fptr);
+
+
+    mpc_result_t r;
+    if (mpc_parse_contents("define.sx", Lispy, &r)) {
+
+        smplx_val* expr = smplx_val_read(r.output);
+
+        smplx_val* x = smplx_val_eval(e, expr);
+        smplx_val_println(x);
+        smplx_val_del(x);
+
+        mpc_ast_delete(r.output);
+
+        return smplx_val_sexpr();
+
+    } else {
+        /* Get Parse Error as String */
+        char* err_msg = mpc_err_string(r.error);
+        mpc_err_delete(r.error);
+
+        /* Create new error message using it */
+        smplx_val* err = smplx_val_err("Could not load Library %s", err_msg);
+        free(err_msg);
+        smplx_val_del(a);
+
+        /* Cleanup and return error */
+        return err;
+    }
+
 }
 
 smplx_val* builtin_print(smplx_scope* e, smplx_val* a) {
@@ -437,10 +441,9 @@ void smplx_scope_add_builtins(smplx_scope* e) {
     smplx_scope_add_builtin(e, "load", builtin_load);
     smplx_scope_add_builtin(e, "error", builtin_error);
     smplx_scope_add_builtin(e, "print", builtin_print);
-  //  smplx_scope_add_builtin(e, "scan", builtin_scan);
-    
+   smplx_scope_add_builtin(e, "scan", builtin_scan);
+
 }
 
 
 #endif /* BUILT_IN_H */
-
