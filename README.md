@@ -23,9 +23,7 @@ More detailed documentation and tutorials will be added soon.
 - logical operations
 - arithmetic operations 
 - Library loading
-- batch interpreter (50%)
-
-### Work In Progress : 
-
+- batch interpreter
 - user input 
 - loading multiple expression files
+ 
