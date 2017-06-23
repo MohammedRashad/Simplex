@@ -25,7 +25,7 @@ More detailed documentation and tutorials will be added soon.
 - Library loading
 - batch interpreter (50%)
 
-# Work In Progress : 
+### Work In Progress : 
 
 - user input 
 - loading multiple expression files
