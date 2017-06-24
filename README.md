@@ -6,7 +6,8 @@ Simple Programming Language. Inspired by Lisp.
 Simplex is my trial to re-invent lisp, as a developer who came from the background of OOP and Procedural Programming. <br/>
 The language is Turing-complete, with many features and a light-weight core. 
 
-More detailed documentation and tutorials will be added soon.
+- More detailed documentation and tutorials will be added soon.
+- Binaries for Windows, Linux and Mac will be available soon.
 
 # Status 
 
@@ -18,7 +19,8 @@ More detailed documentation and tutorials will be added soon.
 - Imperative
 - Standard Library
 - Recursive Language
-- Built
+- Built over Lisp
+- Developed in C
 
 ### Working : 
 
@@ -42,25 +44,25 @@ More detailed documentation and tutorials will be added soon.
 
 # Basic Tutorial
 
-Printing :<br/>
+**Printing :**<br/>
 (print "Hello World")
 <br/><br/>
-Input :<br/>
+**Input :**<br/>
 (scan "X)
 <br/><br/>
-Arithmetic  :<br/> 
+**Arithmetic  :**<br/> 
 (+ 3 4 5 6 7)  == 25<br/>
 (- 3 2) ==  1<br/>
 (\* 3 4) == 12<br/>
 (/ 12 6) == 2 <br/>
 <br/><br/>
-Variables :<br/>
+**Variables :**<br/>
 (define [a] 100)
 <br/><br/>
-Lists :<br/>
+**Lists :**<br/>
 (define [w] [1 2 3 4 5 6])
 <br/><br/>
-Functions :<br/>
+**Functions :**<br/>
 (fun [add x y] [+ x y])
 <br/><br/>
 
