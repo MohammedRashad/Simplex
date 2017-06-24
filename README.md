@@ -93,7 +93,7 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
     # If Statement 
     if (<condition>)
         [<condition true>]
-        [<condition true>]
+        [<condition false>]
     
     # Select Statement
     select
