@@ -55,6 +55,39 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 - Select Statements
 - List operations
 
+## Basic Tutorial 
+
+**Printing :**
+
+    (print "Hello World")
+    
+**Input :**
+
+    (scan "x")
+**Arithmetic :**
+
+    (+ 3 4 5 6 7) == 25
+    (- 3 2) == 1
+    (* 3 4) == 12
+    (/ 12 6) == 2
+    
+**Variables :**
+
+    (define [a] 100)
+    
+**Lists :**
+
+    (define [w] [1 2 3 4 5 6])
+    
+**Functions :**
+
+    (fun [add x y] [+ x y])
+
+** Comments **
+
+    # This is a comment 
+    # Multiline comment
+   
 ## Documentation and Tutorials 
 
 You can always refer to [Simplex Wiki](https://github.com/MohammedRashad/Simplex/wiki/) for in-depth details.
