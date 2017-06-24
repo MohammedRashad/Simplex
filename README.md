@@ -83,7 +83,7 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 
     (fun [add x y] [+ x y])
 
-**Comments: **
+**Comments:**
 
     # This is a comment 
     # Multiline comment
