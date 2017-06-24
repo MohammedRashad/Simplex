@@ -83,10 +83,35 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 
     (fun [add x y] [+ x y])
 
-** Comments **
+**Comments: **
 
     # This is a comment 
     # Multiline comment
+    
+**Conditonal Statements :** 
+
+    # If Statement 
+    if (<condition>)
+        [<condition true>]
+        [<condition true>]
+    
+    # Select Statement
+    select
+        [ (<case>) <do stuff> ]
+        [ (<other case>) <do other stuff> ]
+        [ otherwise (<do other other stuff>) ]
+    
+    # Case Statement
+    case x
+        [0 "Monday"]
+        [1 "Tuesday"]
+        [2 "Wednesday"]
+        [3 "Thursday"]
+        [4 "Friday"]
+        [5 "Saturday"]
+        [6 "Sunday"]
+
+
    
 ## Documentation and Tutorials 
 
