@@ -1,7 +1,7 @@
 # Simplex
 Simple Programming Language. Inspired by Lisp.
 
-# Introduction 
+## Introduction 
 
 
 ### Brief Intro
@@ -21,7 +21,7 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 <br/><br/>
 
 
-# Main Features 
+## Main Features 
 
 - Functional
 - Turing-Complete
@@ -33,7 +33,7 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 - Implemented in C
 
 
-# What's working right now ?
+## What's working right now ?
 
 - Variables
 - Scopes
@@ -55,10 +55,10 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 - Select Statements
 - List operations
 
-# Documentation and Tutorials 
+## Documentation and Tutorials 
 
 You can always refer to [Simplex Wiki](https://github.com/MohammedRashad/Simplex/wiki/) for in-depth details.
 
-# License 
+## License 
 
 This project is signed under GNU Public License V3.0
