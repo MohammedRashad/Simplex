@@ -48,7 +48,7 @@ The language is Turing-complete, with many features and a light-weight core.
 (print "Hello World")
 <br/><br/>
 **Input :**<br/>
-(scan "X)
+(scan "X")
 <br/><br/>
 **Arithmetic  :**<br/> 
 (+ 3 4 5 6 7)  == 25<br/>
