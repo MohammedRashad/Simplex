@@ -3,70 +3,61 @@ Simple Programming Language. Inspired by Lisp.
 
 # Introduction 
 
-Simplex is my trial to re-invent lisp, as a developer who came from the background of OOP and Procedural Programming. <br/>
-The language is Turing-complete, with many features and a light-weight core. 
+
+### Brief Intro
+
+Simplex is a Lisp-based programming language (lisp-diaclet or lisp-variant), built for experimentation and educational purposes as a side project, it was meant to be different from the mainstream languages with some amazing features borrowed from many languages.<br/>
+
+The motivation behind it was to push my limits in programming and in **C** especially, also as a part of my learning process to explore computer science and as a personal challenge.
 
 - More detailed documentation and tutorials will be added soon.
 - Binaries for Windows, Linux and Mac will be available soon.
 
-# Status 
+### What's simplex ?
+
+Simplex is simple programming language. Inspired by Lisp, Python, Fortran and BASIC.<br/>
+It was built mainly following the book [Build Your Own Lisp](www.buildyourownlisp.com).<br/><br/>
+With many improvements and modifications, it's my trial to re-invent Lisp.
+<br/><br/>
 
 
-### Features : 
+# Main Features 
 
-- Turing-Complete 
-- Functional 
+- Functional
+- Turing-Complete
 - Imperative
+- Dynamically-Typed
+- Weakly-Typed
+- Live Interpreter
+- Batch Interpreter
+- Implemented in C
+
+
+# What's working right now ?
+
+- Variables
+- Scopes
+- Live Interpreter
+- Functions
+- First Order Functions 
+- Recursion
 - Standard Library
-- Recursive Language
-- Built over Lisp
-- Developed in C
+- Strings
+- Floating Point Numbers
+- Logical Operations
+- Arithmetic Operations 
+- Batch Interpreter
+- User Input 
+- Loading Files
+- Library Loading
+- If Conditional Statements 
+- Case Statements
+- Select Statements
+- List operations
 
-### Working : 
+# Documentation and Tutorials 
 
-- variables
-- scopes
-- live interpreter
-- functions
-- first order functions 
-- recursion
-- standard library
-- strings
-- logical operations
-- arithmetic operations 
-- Library loading
-- batch interpreter
-- user input 
-- loading multiple expression files
-- conditional statements 
-- case statements
-- list operations
-
-# Basic Tutorial
-
-**Printing :**<br/>
-(print "Hello World")
-<br/><br/>
-**Input :**<br/>
-(scan "X")
-<br/><br/>
-**Arithmetic  :**<br/> 
-(+ 3 4 5 6 7)  == 25<br/>
-(- 3 2) ==  1<br/>
-(\* 3 4) == 12<br/>
-(/ 12 6) == 2 <br/>
-<br/><br/>
-**Variables :**<br/>
-(define [a] 100)
-<br/><br/>
-**Lists :**<br/>
-(define [w] [1 2 3 4 5 6])
-<br/><br/>
-**Functions :**<br/>
-(fun [add x y] [+ x y])
-<br/><br/>
-
-More is being added..
+You can always refer to [Simplex Wiki](https://github.com/MohammedRashad/Simplex/wiki/) for in-depth details.
 
 # License 
 
