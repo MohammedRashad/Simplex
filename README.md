@@ -1,6 +1,6 @@
 # Simplex
 Simple Programming Language. Inspired by Lisp.<br/>
-A Lisp for everyone, and no one.
+It's a Lisp for everyone, and no one.
 
 ## Introduction 
 
