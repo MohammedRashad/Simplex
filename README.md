@@ -1,5 +1,6 @@
 # Simplex
-Simple Programming Language. Inspired by Lisp.
+Simple Programming Language. Inspired by Lisp.<br/>
+A Lisp for everyone, and no one.
 
 ## Introduction 
 
