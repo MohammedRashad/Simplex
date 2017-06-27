@@ -13,8 +13,7 @@ Simplex is a Lisp-based programming language (lisp-diaclet or lisp-variant), bui
 
 The motivation behind it was to push my limits in programming and in **C** especially, also as a part of my learning process to explore computer science and as a personal challenge.
 
-- More detailed documentation and tutorials will be added soon.
-- Binaries for Windows, Linux and Mac will be available soon.
+- More detailed documentation and tutorials is being added.
 
 ### What's simplex ?
 
