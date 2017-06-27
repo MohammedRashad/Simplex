@@ -2,6 +2,8 @@
 Simple Programming Language. Inspired by Lisp.<br/>
 It's a Lisp for everyone, and no one.
 
+**[Get Simplex Here](https://github.com/MohammedRashad/Simplex/releases)**
+
 ## Introduction 
 
 
