@@ -18,7 +18,6 @@ More detailed documentation and tutorials is being added.
 ### What's simplex ?
 
 Simplex is simple programming language. Inspired by Lisp, Python, Fortran and BASIC.<br/>
-It was built mainly following the book [Build Your Own Lisp](www.buildyourownlisp.com).<br/><br/>
 With many improvements and modifications, it's my trial to re-invent Lisp.
 <br/><br/>
 
