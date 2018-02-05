@@ -31,7 +31,7 @@ With many improvements and modifications, it's my trial to re-invent Lisp.
 - Weakly-Typed
 - Live Interpreter
 - Batch Interpreter
-- Implemented in C
+- Implemented in C++
 
 
 ## What's working right now ?
